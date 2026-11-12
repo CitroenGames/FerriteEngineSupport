@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a bug or crash in the Ferrite SDK
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please search existing issues first and open one issue per bug.
+        Do not post licence keys, secrets or private project content. Security problems must not go here: ask for a private channel on Discord (https://discord.gg/VE6Q7Vu4mR) without posting details.
+  - type: input
+    id: version
+    attributes:
+      label: Ferrite SDK version
+      description: Editor, Help > About.
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system and version
+      placeholder: Windows 11 24H2 / Ubuntu 24.04 / macOS 14
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: CPU, GPU and driver version
+      description: Help > About > This Machine > Copy as JSON is ideal. Also say which graphics backend you use (DirectX 12, Vulkan or Metal).
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step by step, ideally with a minimal project.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Editor or game log and console output around the problem. Check for private data first.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots, video, minimal project, crash dump
+      description: Drag files into this box. If a file is too large, say so in the issue.
+    validations:
+      required: false
