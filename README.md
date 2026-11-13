@@ -6,7 +6,7 @@ This repository is the public place to report bugs in the **Ferrite SDK**. It co
 
 - Windows 11 (x64)
 - Linux, Ubuntu 24.04 or later (x64)
-- macOS 14 or later on Apple Silicon (M1 and later; Intel Macs are not supported)
+- macOS on Apple Silicon (M1 and later; Intel Macs are not supported): macOS 26 or later for the editor and SDK tools; games you build run on macOS 14 or later
 
 Graphics backends are DirectX 12, Vulkan and Metal. C# projects need the .NET 10 SDK.
 
